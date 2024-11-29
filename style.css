@@ -17,11 +17,19 @@ main {
     /* Tarolo, szülőelem */
     display: grid;
     grid-template-columns: 1fr 200px;
-    grid-template-areas: 
+    grid-template-areas:
+    "h h"
     "n n"
     "ar a"
     "f f";
 }
+
+header{
+    padding: 50px;
+    text-align: center;
+    grid-area: h;
+}
+
 
 nav ul {
     display: grid;
@@ -91,6 +99,7 @@ div#ar {
     main {
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
+        "h h"
         "n n"
         "ar a"
         "f f";
@@ -118,6 +127,7 @@ div#ar {
         font-size: 6vw;
         grid-template-columns: 1fr;
         grid-template-areas: 
+        "h"
         "n"
         "a"
         "ar"

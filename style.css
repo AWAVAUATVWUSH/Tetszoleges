@@ -7,17 +7,21 @@
 }
 
 body {
-    background-color: rgb(233, 218, 230);   
+    background-color: #f7fafa;
 }
 
 main {
-    background-color: red;
+
     max-width: 1200px;
     width: 90%;
     margin: auto;
     padding: 10px;
     display: grid;
     grid-template-columns: 1fr 200px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: #5facb4;
     grid-template-areas:
     "h h"
     "n n"
@@ -33,28 +37,46 @@ header{
 
 
 nav ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display:flex;
     list-style-type: none;
-    background-color: lightblue;
+
 }
+nav ul li{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+nav ul li:hover{
+    border-radius:10px;
+    background-color: #f7fafa;
+
+}
+
 nav a {
     text-decoration: none;
-    background-color: blueviolet;
+    color: black;
 }
 nav {
     grid-area: n;
     padding: 20px 0px;
-    background-color: pink;
+    background-color: #9cd6dc;
+    border-radius: 10px;
+    margin-bottom: 10px;;
 }
 footer {
     margin-top: 10px;
     grid-area: f;
-    background-color: white;
+    text-align: center;
 }
 aside {
     grid-area: a;
-    background-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: #69cfda;
+    margin-left: 10px;
+    text-align: center;
+    padding: 10px;
 }
 
 img {
@@ -64,10 +86,13 @@ article {
     grid-area: ar;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
 }
-div {
-    background-color: white;
-    margin: 10px;
+
+article div{
+    border-radius: 10px;
+    background-color: #69cfda;
+    text-align: center;
 }
 
 div#bal {
@@ -90,13 +115,11 @@ div#bal {
 }
 
 div#ar {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 100px;
+    text-align: center;
 }
 
 /* TABLET NÉZET - RESZPONZIVITÁS KIALAKÍTÁSA */
-@media only screen and (max-width: 960px) { /* töréspont */
+@media only screen and (max-width: 1212px) { /* töréspont */
     body, main {
       /* background-color: lightblue; */
       width: 100%;

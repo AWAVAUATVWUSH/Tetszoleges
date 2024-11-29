@@ -7,14 +7,15 @@
 }
 
 body {
-    width: 90%;
-    max-width: 900px;
-    margin: auto; /* Középre az oldalt */
-    background-color: rgb(233, 218, 230);
+    background-color: rgb(233, 218, 230);   
 }
 
 main {
-    /* Tarolo, szülőelem */
+    background-color: red;
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
     display: grid;
     grid-template-columns: 1fr 200px;
     grid-template-areas:
@@ -35,12 +36,16 @@ nav ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     list-style-type: none;
+    background-color: lightblue;
 }
 nav a {
     text-decoration: none;
+    background-color: blueviolet;
 }
 nav {
     grid-area: n;
+    padding: 20px 0px;
+    background-color: pink;
 }
 footer {
     margin-top: 10px;
